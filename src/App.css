@@ -1,38 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Open+Sans:ital,wght@1,300;1,400&family=Poppins:ital,wght@1,100&family=Raleway:wght@300&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+#quote-box {
+  width: 30%;
+  min-height: 30%;
+  border-radius: 8px;
+  padding: 10px 20px;
+  background-color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#text{
+  font-family: 'Raleway', sans-serif;
+  font-size: 28px;
+  margin: 50px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#author {
+  text-align: right;
+  padding-right: 20px;
+  color: green;
+}
+
+.buttons-section {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  margin: 20px; 
+}
+
+#tweet-quote, #tublr {
+  display: inline-block;
+  padding: 10px;
+  background-color: green;
+  margin: 0 5px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#tublr {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#new-quote {
+  display: inline-block;
+  width: 100px; 
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
 }
+
+#new-quote:hover {
+  opacity: 0.9;
+} 
